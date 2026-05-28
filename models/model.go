@@ -3,10 +3,10 @@ package models
 import "github.com/gin-gonic/gin"
 
 type User struct {
-	FullName       string        `json:"full_name"`
-	Email          string        `json:"email"`
-	PhoneNumber    int           `json:"phone_number"`
-	PrimaryService []interface{} `json:"primary_service"`
+	FullName    string `json:"full_name"`
+	Email       string `json:"email"`
+	PhoneNumber int    `json:"phone_number"`
+	//PrimaryService []interface{} `json:"primary_service"`
 }
 
 type JsonResponse struct {
