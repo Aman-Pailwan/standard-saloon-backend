@@ -41,3 +41,9 @@ func CreateUser(c *gin.Context) {
 	DB.Create(&user)
 	models.ResponseJson(c, http.StatusCreated, "User Created Successfully", user)
 }
+
+func GetUser(c *gin.Context) {
+	var users []models.User
+	DB.Find(&users)
+	models.ResponseJson(c, http.StatusOK, "Users Retrieved Successfully", users)
+}
